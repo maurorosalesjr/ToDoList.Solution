@@ -26,23 +26,11 @@ namespace ToDoList.Models
     {
       return ID++;
     }
-      // count = 1;
-      // return count;
-      // count ++;
-
-      // for(int i = 1; i < 10; i++)
-      // {
-      //   return i;
-      // };
-     
-    //  public static int getID(){    return ID++;}
-
-    // }
-
+    
     public Item(string description)
     {
       Description = description;
-      //field for unique identifier? that gives it # and then increments it
+
       UniqueId = CountItems();
       _instances.Add(this);
     }

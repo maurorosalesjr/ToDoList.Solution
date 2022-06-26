@@ -8,7 +8,7 @@ namespace ToDoList
   {
     public static void Main()
     {
-      // Console.WriteLine("Welcome to the To-Do List");
+
       
       Console.WriteLine("Would you like to add an item to your To-Do List? ['Y' for yes, 'Enter' for no]");
       string answer = Console.ReadLine();
@@ -25,13 +25,13 @@ namespace ToDoList
       } 
       else 
       { 
-        //ask if they want to view list or exit program
+      
         Console.WriteLine("Do you want to view your list so far or exit the program? ['Y' for view or 'Enter' for exiting]");
         string viewOrExit = Console.ReadLine();
         if (viewOrExit == "Y" || viewOrExit == "y")
         { 
           List<Item> result = Item.GetAll();
-          // Console.WriteLine(result);
+          
             Console.WriteLine("Your to do list:");
           foreach (Item thisItem in result)
           {
